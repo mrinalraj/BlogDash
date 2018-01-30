@@ -1,0 +1,127 @@
+.PostForm button:hover{
+    box-shadow: 0 4px 12px #bbb;
+}
+
+.PostForm{
+    background: white;
+    box-shadow: 0 2px 3px #ccc;
+    margin: 40px 30px;
+    border-radius: 3px;
+    border: 1px solid #bebebe;
+}
+
+.PostForm input[type=text]{
+    outline: none;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+
+.PostForm input[type=text]:first-child{
+    border: none;
+    font-size: 18px;
+    padding: 25px 25px;
+    border-radius: 4px;
+    width: calc(100% - 50px);
+    border-bottom: 0.5px solid #bebebe;
+}
+
+.PostForm textarea{
+    text-transform: capitalize;
+    border: none;
+    font-weight: 700;
+    color: rgb(37, 37, 37);
+    font-size: 15px;
+    border-radius: 4px;
+    width: calc(100% - 40px);
+    padding: 25px 20px;
+    border-bottom: 0.5px solid #bebebe; 
+}
+
+.PostForm input[type=text]:nth-child(3){
+    border: none;
+    font-size: 12px;
+    border-radius: 4px;
+    width: calc(100% - 40px);
+    padding: 25px 20px; 
+    border-bottom: 0.5px solid #bebebe; 
+}
+
+.PostForm input::-webkit-file-upload-button{
+    visibility: hidden;
+}
+.fileUpload{
+    color: transparent;
+    cursor: pointer;
+}
+.fileUpload::before{
+    color: #536DFE;
+    content: "Select file/files";
+    display : inline-block;
+    border: 1px dotted #536DFE;
+    padding: 10px 30px;
+    white-space: nowrap;
+    margin: 15px 0 0 15px;
+}
+.fileUpload:hover::before{
+    background: #536DFE;
+    color: white;
+}
+
+button.publish{
+    background: #536DFE;
+    border-radius: 100%;
+    width: 50px;
+    height: 50px;
+    border : none;
+    box-shadow: 0 2px 10px #283493af;
+    position:  fixed;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+}
+
+
+button.publish:hover{
+    box-shadow: 0 3px 18px #2834938a;
+}
+
+ul.uploadedFiles{
+    list-style: none;
+    display: flex;
+    overflow-y: hidden;
+    overflow-x: scroll;
+}
+
+.uploadedFiles li{
+    list-style: none;
+}
+
+.uploadedFiles img {
+    margin: 15px 15px;
+    padding: 4px;
+    border-radius: 2px;
+    border: 0.5px solid rgb(211, 211, 211);
+    box-shadow: 0 2px 10px #bbb;
+}
+
+.uploadedFiles::-webkit-scrollbar{
+  background: transparent;
+  height: 5px;
+}
+
+.uploadedFiles::-webkit-scrollbar-track{
+  background-color: transparent;
+}
+
+.uploadedFiles::-webkit-scrollbar-thumb{
+  background: #536DFE;
+  border-radius: 3px;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .PostForm{
+        margin: 20px 8px;
+    }
+}

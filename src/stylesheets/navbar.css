@@ -1,0 +1,59 @@
+.navbar{
+    height: calc(100vh - 62px);
+    width: 250px;
+    box-shadow: 0 3px 6px rgba(26, 26, 26, 0.5);
+    background: #fff;
+    position: fixed;
+    top: 62px;
+}
+
+.navImg{
+    background-image:  url('/imgs/left-bg.png');
+    height: 100px;
+    background-size: contain;
+    background-repeat: repeat-x; 
+}
+
+.navbar ul{
+    list-style: none;
+}
+
+.time{
+    margin-top: 100px;
+}
+
+.navbar ul li{
+    display: flex;
+    padding: 15px 20px;
+    color: #646464;
+    cursor: pointer;
+}
+
+.navbar ul li:hover{
+    background: #ccc;
+}
+
+.navbar ul li img{
+    height: 20px;
+    margin-right:30px; 
+}
+
+.shown {
+    display: block;
+}
+
+.hidden{
+    display: none;
+}
+
+
+
+@media only screen and (max-width: 767px){
+    .navbar{
+        display: none;
+    }
+}
+
+.active li{
+    background: #ccc;
+}

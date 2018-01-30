@@ -1,0 +1,28 @@
+.rightBody{
+    width: calc(100vw - 250px);
+    min-height: calc(100vh - 62px);
+    background: #eee;
+    margin: 62px 0 0 250px;
+    overflow: hidden;
+}
+
+.intro{
+    background: #ddd;
+    padding: 25px;
+    box-shadow: 0 1px 2px #bbb;
+}
+
+.intro h2{
+    color: rgb(97, 97, 97);
+}
+.intro p{
+    color: rgb(97,97,97);
+}
+
+
+@media only screen and (max-width: 767px){
+    .rightBody{
+        width: 100%;
+        margin: 62px 0 0 0;
+    }
+}
