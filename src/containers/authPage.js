@@ -1,6 +1,5 @@
 import React, { Component } from 'react';
 import classes from '../stylesheets/authPage.css'
-import axios from 'axios'
 import { Redirect } from 'react-router-dom';
 
 class AuthPage extends Component {
