@@ -1,0 +1,20 @@
+name: Build Test
+
+on:
+  [pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - uses: actions/checkout@v2
+
+    - name: Set Node option max_old_space_size
+      run: export NODE_OPTIONS=--max_old_space_size=1536 
+
+    - name: Install dependencies
+      run: npm install
+
+    - name: Build project
+      run: REACT_APP_DEPLOYMENT=DEV REACT_APP_TENANT=GMP npm run build
