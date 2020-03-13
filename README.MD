@@ -1,6 +1,5 @@
 # BLOGDASH
 
--------------
 
 ## Dashboard for personal blog built on react.js
 
